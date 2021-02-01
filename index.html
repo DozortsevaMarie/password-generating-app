@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Random password generating app</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="main-container">
+		<h2>Random password generating app</h2>
+		<div class="main-container__block" id="form">
+			<input class = "main-container__block__input" type="text" placeholder="Create password" id="password" readonly="">
+			<label  for="length">Length <span class="prev"></span> <input class="input__length" type="number" min="5" max="30" value="5" id="length">
+				<span class="next"></span>
+			</label>
+			<label for="small_letters"><input class = "main-container__block__check" type="checkbox" id="small_letters" checked="">
+				<span class="check__box"></span>
+				Small letters</label>
+			<label for="big_letters"><input class = "main-container__block__check" type="checkbox" id="big_letters" checked>
+				<span class="check__box"></span>
+				Big letters</label>
+			<label for="numbers"><input class = "main-container__block__check" type="checkbox" id="numbers" checked>
+				<span class="check__box"></span>
+				Numbers</label>
+			<label for="special_signs"><input class = "main-container__block__check" type="checkbox" id="special_signs" checked>
+				<span class="check__box"></span>
+				Special signs</label>
+			<div class="main-container__block__buttons"><button id="generator" class="main-container__block__generator-btn">Generate</button>
+			<button class="main-container__block__copy-btn" id="copy">Copy</button>
+			</div>
+		</div>
+	</div>
+<script src="jstemporary.js"></script>	
+</body>
+</html>
