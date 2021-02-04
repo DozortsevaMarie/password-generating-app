@@ -183,20 +183,21 @@ input[type=number]::-webkit-outer-spin-button{
 
 .main-container__block__buttons{
 	display: flex;
+	width: 70%;
+	margin-left: 15%;
+	justify-content: space-evenly;
 }
 
 .main-container__block__generator-btn, .main-container__block__copy-btn{
 	color: #50ADC8;
 	background-color:#091921;
-	margin-left: 15%;
 	font-size: 20px;
-	width: 30%;
+	width: 40%;
 	height: 2.5em;
 	border: 2px solid #50ADC8;
 	outline: none;
 	font-weight: bold;
 	text-transform: uppercase;
-	/*overflow: hidden;*/
 	transition: 0.5s;
 	letter-spacing: 4px;
 }
