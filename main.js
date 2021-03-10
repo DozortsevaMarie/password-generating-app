@@ -9,7 +9,12 @@ const generator = document.getElementById('generator');
 const result = document.getElementById('password');
 const copyPassword = document.getElementById('copy');
 
-
+function defaultInputRange() {
+	if(Number(number.value) > 5 && Number(number.value) < 30){
+		prevButton.style.display = 'block';
+		nextButton.style.display = 'block';
+	}
+}
 
 prevButton.addEventListener('click',() => {
 number.stepDown();
@@ -17,10 +22,7 @@ if (Number(number.value) === 5){
 	prevButton.style.display = 'none';
 	nextButton.style.display = 'block';
 }
-else if(Number(number.value) > 5 && Number(number.value) < 30){
-	prevButton.style.display = 'block';
-	nextButton.style.display = 'block';
-}
+defaultInputRange();
 });
 
 nextButton.addEventListener('click',() => {
@@ -28,7 +30,9 @@ number.stepUp();
 if (Number(number.value) === 30) {
 	nextButton.style.display = 'none';
 	prevButton.style.display = 'block'
-}});
+}
+defaultInputRange()
+});
 
 // generate functions
 function getRandomLower(){

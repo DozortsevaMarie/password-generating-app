@@ -137,7 +137,7 @@ h2{
 }
 .main-container__block label:nth-child(2):hover .input__length{
 	width: 4em;
-	box-shadow: 0 0 0 0.15em #50ADC8,
+	box-shadow: 0 0 0 0.1em #50ADC8,
 				0 0 0 0.2em #FFFF6A;
 }
 input[type=number]::-webkit-inner-spin-button,
